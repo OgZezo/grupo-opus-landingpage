@@ -1,4 +1,5 @@
 import styles from './Hero.module.css'
+import logoOpus from '../assets/logo-opus.svg'; // Importação do logotipo
 
 export default function Hero() {
   return (
@@ -7,11 +8,13 @@ export default function Hero() {
       <div className={styles.lines} />
       <div className={styles.content}>
         <p className={styles.eyebrow}>Grupo Opus</p>
-        <h1 className={styles.title}>
-          Soluções<br />
-          <em>jurídicas</em> com<br />
-          precisão
-        </h1>
+        <div className={styles.logoWrapper}>
+          <img 
+            src={logoOpus} 
+            alt="Logotipo Grupo Opus" 
+            className={styles.mainLogo} 
+          />
+        </div>
         <p className={styles.sub}>
           Blindando seu patrimônio com expertise, ética e comprometimento absoluto.
         </p>

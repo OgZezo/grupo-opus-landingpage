@@ -1,3 +1,32 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: translateY(-1px);
+}
+
+.navIcon {
+  height: 32px; /* Tamanho ideal para barra de navegação */
+  width: auto;
+  display: block;
+  /* Garante nitidez máxima no SVG */
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Quando o usuário scrollar, podemos diminuir levemente a logo se desejar */
+.scrolled .navIcon {
+  height: 28px;
+}
+
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -64,4 +93,11 @@
 .cta:hover {
   background: var(--gold) !important;
   color: var(--navy) !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .logo span {
+    display: none; /* Deixa apenas o ícone no mobile para ganhar espaço */
+  }
 }
