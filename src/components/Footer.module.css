@@ -1,0 +1,43 @@
+.footer {
+  background: var(--navy);
+  border-top: 1px solid rgba(201,152,58,0.12);
+  padding: 3rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.brand {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+}
+
+.sep {
+  width: 1px;
+  height: 24px;
+  background: rgba(255,255,255,0.1);
+}
+
+.tagline {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(255,255,255,0.25);
+}
+
+.copy {
+  font-size: 11px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 0.06em;
+}
