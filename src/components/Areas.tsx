@@ -3,8 +3,8 @@ import styles from './Areas.module.css'
 const areas = [
   {
     num: '01',
-    name: 'Direito Civil',
-    text: 'Atuação em contratos, responsabilidade civil, família e sucessões, garantindo segurança jurídica nas relações privadas dos nossos clientes.',
+    name: 'Consultoria juridica estratégica',
+    text: 'Assessoria jurídica personalizada para empresas e indivíduos, com foco em soluções estratégicas e prevenção de riscos legais.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2L3 7v10l9 5 9-5V7L12 2z"/>
@@ -14,8 +14,8 @@ const areas = [
   },
   {
     num: '02',
-    name: 'Direito Empresarial',
-    text: 'Consultoria jurídica para empresas, contratos societários, fusões, aquisições e compliance, alinhando estratégia e segurança legal.',
+    name: 'Regularização Fiscal e Recuperação de Crédito',
+    text: 'Especialização em regularização fiscal, recuperação de créditos tributários e consultoria para otimização da carga tributária, garantindo conformidade e eficiência financeira.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="7" width="20" height="14" rx="2"/>
@@ -27,12 +27,16 @@ const areas = [
   },
   {
     num: '03',
-    name: 'Direito Imobiliário',
-    text: 'Assessoria em compra, venda e locação de imóveis, regularização fundiária e disputas imobiliárias com agilidade e precisão.',
+    name: 'Soluções digitais e Compliance',
+    text: 'Desenvolvimento de soluções digitais e consultoria em compliance para garantir a conformidade regulatória e a proteção dos dados dos nossos clientes.',
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-        <polyline points="9,22 9,12 15,12 15,22"/>
+      <svg viewBox="-10.5 -9.45 21 18.9" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="0" cy="0" r="2" fill="currentColor"/>
+        <g stroke="currentColor">
+          <ellipse rx="10" ry="4.5" />
+          <ellipse rx="10" ry="4.5" transform="rotate(60)" />
+          <ellipse rx="10" ry="4.5" transform="rotate(120)" />
+        </g>
       </svg>
     ),
   },

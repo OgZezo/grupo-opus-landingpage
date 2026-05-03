@@ -91,6 +91,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  overflow: hidden;
 }
 
 .mapInner {
@@ -99,6 +101,8 @@
   align-items: center;
   gap: 12px;
   color: rgba(255,255,255,0.2);
+  width: 100%;
+  height: 100%;
 }
 
 .mapInner svg { width: 28px; height: 28px; }
@@ -107,6 +111,18 @@
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+/* Efeito visual para o mapa não "gritar" no site escuro */
+/* .googleMapsIframe {
+  filter: grayscale(1) invert(0.9) hue-rotate(180deg) brightness(0.9);
+  transition: filter 0.5s ease;
+} */
+
+
+/* O mapa volta a ficar colorido ao passar o mouse */
+.googleMapsIframe:hover {
+  filter: grayscale(0) invert(0) hue-rotate(0deg) brightness(1);
 }
 
 .address {

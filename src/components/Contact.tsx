@@ -34,11 +34,11 @@ export default function Contact() {
             Agende uma consulta e descubra como podemos proteger o que importa para você.
           </p>
           <div className={styles.info}>
-            <a href="https://wa.me/5521123456789" target="_blank" rel="noreferrer" className={styles.infoItem}>
+            <a href="https://wa.me/5521979629991" target="_blank" rel="noreferrer" className={styles.infoItem}>
               <div className={styles.infoIcon}><WhatsappIcon /></div>
               <div>
                 <p className={styles.infoLabel}>WhatsApp</p>
-                <p className={styles.infoValue}>(21) 12345-6789</p>
+                <p className={styles.infoValue}>(21) 97962-9991</p>
               </div>
             </a>
             <a href="mailto:contato@opusgrupo.com" className={styles.infoItem}>

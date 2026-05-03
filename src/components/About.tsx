@@ -1,4 +1,5 @@
 import styles from './About.module.css'
+import statueImg from '../assets/temis.png';
 
 export default function About() {
   return (
@@ -26,7 +27,9 @@ export default function About() {
         <div className={`${styles.right} reveal`} style={{ transitionDelay: '0.2s' }}>
           <div className={styles.visual}>
             <div className={styles.visualBg} />
-            <div className={styles.visualPattern} />
+            <div className={styles.visualPattern}>
+              <img src={statueImg} alt="Estátua de Temis" className={styles.statueImage} />
+            </div>
             <div className={styles.visualText}>
               <p className={styles.quote}>"Construindo soluções, blindando seu patrimônio."</p>
               <p className={styles.attr}>Missão — Opus Grupo</p>

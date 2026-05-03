@@ -79,12 +79,15 @@
 
 .visual {
   aspect-ratio: 4/5;
-  background: var(--navy-mid);
+  background: var(--navy);
   border-radius: 4px;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
+  /* Cria a borda clara externa vista na imagem */
+  border: 12px solid #f8f5f0; 
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 .visualBg {
@@ -95,27 +98,55 @@
     linear-gradient(160deg, var(--navy-light) 0%, var(--navy) 100%);
 }
 
+/* 1. Primeiro, aumentamos a opacidade do padrão de linhas para ficar visível como na foto */
 .visualPattern {
   position: absolute;
   inset: 0;
-  opacity: 0.04;
+  opacity: 0.15; /* Aumentado de 0.04 para aparecer sobre a estátua */
   background-image: repeating-linear-gradient(
     45deg,
-    rgba(255,255,255,0.5) 0px,
-    rgba(255,255,255,0.5) 1px,
+    rgba(255,255,255,0.2) 0px,
+    rgba(255,255,255,0.2) 1px,
     transparent 1px,
     transparent 40px
   );
+  z-index: 2; /* Garante que as linhas passem "por cima" da estátua */
+  pointer-events: none;
+}
+
+/* 2. Configuração da Imagem da Estátua */
+.statueImage {
+  position: absolute;
+  top: 15%; /* Posiciona a estátua na parte superior do card */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55%; /* Ajusta o tamanho para não tocar nas bordas */
+  height: auto;
+  opacity: 0.45; /* Opacidade sutil para integrar com o azul marinho */
+  z-index: 1;
+  
+  /* Filtros para dar o tom de bronze sombrio da referência */
+  filter: 
+    brightness(0.6) 
+    contrast(1.2) 
+    sepia(0.4) 
+    hue-rotate(-10deg);
+  
+  /* Faz a imagem mesclar com as cores do gradiente de fundo */
+  mix-blend-mode: luminosity; 
+  
+  /* Suaviza a base da estátua para não ter corte seco acima do texto */
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
 .visualText {
   position: relative;
-  z-index: 2;
+  z-index: 10; /* Garante que o texto fique acima de tudo */
   padding: 2.5rem;
-  border-top: 1px solid rgba(201,152,58,0.25);
+  border-top: 1px solid rgba(201,152,58,0.3);
   width: 100%;
-  background: rgba(10,22,40,0.5);
-  backdrop-filter: blur(8px);
+  background: var(--navy); /* Fundo sólido como na referência */
 }
 
 .quote {
