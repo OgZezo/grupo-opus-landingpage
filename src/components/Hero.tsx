@@ -16,7 +16,7 @@ export default function Hero() {
           />
         </div>
         <p className={styles.sub}>
-          Blindando seu patrimônio com expertise, ética e comprometimento absoluto.
+          Construindo soluções, blindando seu patrimônio.
         </p>
         <div className={styles.actions}>
           <a href="#contato" className={styles.btnPrimary}>Agendar consulta</a>

@@ -36,7 +36,7 @@
 .title {
   font-family: var(--font-serif);
   font-size: clamp(36px, 4vw, 52px);
-  font-weight: 300;
+  font-weight: 600;
   color: var(--white);
   line-height: 1.1;
   margin-bottom: 2.5rem;
@@ -76,7 +76,7 @@
 
 .rowText {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   color: rgba(255,255,255,0.7);
   transition: color 0.3s;
 }
@@ -112,7 +112,7 @@
 .address {
   margin-top: 1rem;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   color: rgba(255,255,255,0.3);
   letter-spacing: 0.04em;
 }
