@@ -14,7 +14,7 @@ export default function About() {
           </h2>
           <div className={styles.divider} />
           <p className={styles.text}>
-            Somos um grupo especializado em soluções jurídicas e de proteção patrimonial,
+            Somos um grupo especializado em soluções empresariais, jurídicas, tecnológicas e de proteção patrimonial,
             atuando com excelência, ética e comprometimento para proteger o que mais
             importa para nossos clientes.
           </p>
