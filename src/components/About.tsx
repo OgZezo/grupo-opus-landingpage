@@ -8,8 +8,8 @@ export default function About() {
         <div className={`${styles.left} reveal`}>
           <p className={styles.label}>Quem somos</p>
           <h2 className={styles.title}>
-            Uma firma<br />
-            construída sobre<br />
+            Um grupo<br />
+            construído sobre<br />
             <em>excelência</em>
           </h2>
           <div className={styles.divider} />
@@ -32,7 +32,7 @@ export default function About() {
             </div>
             <div className={styles.visualText}>
               <p className={styles.quote}>"Construindo soluções, blindando seu patrimônio."</p>
-              <p className={styles.attr}>Missão — Opus Grupo</p>
+              <p className={styles.attr}>Missão — Grupo Opus</p>
             </div>
           </div>
           <div className={styles.ornament} />
