@@ -95,9 +95,19 @@
   color: var(--navy) !important;
 }
 
-/* Mobile */
+/* src/components/Nav.module.css */
 @media (max-width: 768px) {
+  .links {
+    display: none; /* Esconde links complexos no mobile */
+  }
+
   .logo span {
-    display: none; /* Deixa apenas o ícone no mobile para ganhar espaço */
+    display: none; /* Mantém apenas o ícone React para ganhar espaço */
+  }
+
+  .navBtn {
+    display: block; /* Mantém apenas o botão de ação principal */
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
   }
 }

@@ -183,3 +183,35 @@
   color: var(--navy);
   transform: translateY(-2px);
 }
+
+/* src/components/Contact.module.css */
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+
+  .grid {
+    /* O nome correto é .grid e não .container */
+    grid-template-columns: 1fr; 
+    gap: 3.5rem;
+  }
+
+  .form {
+    padding: 2rem 1.5rem; /* Reduz de 3rem para 1.5rem */
+  }
+
+  .row {
+    /* Transforma os campos Nome/Email em uma coluna */
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .title {
+    font-size: 32px; /* Redução para não quebrar feio */
+  }
+
+  .btn {
+    padding: 18px; /* Aumenta área de toque */
+    font-size: 11px;
+  }
+}

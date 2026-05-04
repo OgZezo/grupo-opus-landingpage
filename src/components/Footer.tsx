@@ -42,10 +42,7 @@ export default function Footer() {
                 <strong>WhatsApp</strong><br />
                 <a href="https://wa.me/5521979629991" target="_blank" rel="noopener noreferrer">
                   (21) 97962-9991
-                </a>
-              </li>
-              <li>
-                <strong>WhatsApp</strong><br />
+                </a> <br /> <br />
                 <a href="https://wa.me/5521971767324" target="_blank" rel="noopener noreferrer">
                   (21) 97176-7324
                 </a>

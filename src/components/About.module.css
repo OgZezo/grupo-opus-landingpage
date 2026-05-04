@@ -102,7 +102,7 @@
 .visualPattern {
   position: absolute;
   inset: 0;
-  opacity: 0.15; /* Aumentado de 0.04 para aparecer sobre a estátua */
+  opacity: 80%; /* Aumentado de 0.04 para aparecer sobre a estátua */
   background-image: repeating-linear-gradient(
     45deg,
     rgba(255,255,255,0.2) 0px,
@@ -110,7 +110,7 @@
     transparent 1px,
     transparent 40px
   );
-  z-index: 2; /* Garante que as linhas passem "por cima" da estátua */
+  z-index: 1; /* Garante que as linhas passem "por baixo" da estátua */
   pointer-events: none;
 }
 
@@ -122,8 +122,8 @@
   transform: translateX(-50%);
   width: 55%; /* Ajusta o tamanho para não tocar nas bordas */
   height: auto;
-  opacity: 0.45; /* Opacidade sutil para integrar com o azul marinho */
-  z-index: 1;
+  opacity: 100%; /* Opacidade sutil para integrar com o azul marinho */
+  z-index: 2; /* Garante que a estátua fique acima das linhas */
   
   /* Filtros para dar o tom de bronze sombrio da referência */
   filter: 
@@ -183,4 +183,42 @@
   background: var(--gold);
   opacity: 0.12;
   border-radius: 50%;
+}
+
+/* src/components/About.module.css */
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Empilha as colunas */
+    gap: 3rem;
+  }
+
+  .left {
+    order: 2; /* Texto embaixo */
+    text-align: center;
+  }
+
+  .right {
+    order: 1; /* Card visual em cima */
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .visual {
+    aspect-ratio: 1/1; /* Card mais quadrado no mobile */
+    border: 8px solid #f8f5f0; /* Moldura mais fina */
+  }
+
+  .statueImage {
+    width: 70%; /* Estátua menor para caber no quadrado */
+    top: 10%;
+  }
+
+  .title {
+    font-size: 2.5rem; /* Escala menor para títulos */
+  }
 }
